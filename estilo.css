@@ -1,5 +1,223 @@
 @charset "UTF-8";
 
+
+
+@media screen and (min-width:600px) and (max-width:768px) {
+    @font-face {
+        font-family: 'square';
+        src: url(fontes/square.ttf);
+        font-weight: normal;
+    }
+    
+    @font-face {
+        font-family: 'ea';
+        src: url(fontes/ea.ttf);
+        font-weight: normal;
+    }
+    
+    :root{
+        --cor0:#173673;
+        --cor1:#F2CB05;
+        --cor2:#F2AB27;
+        --cor3:#D93D04;
+        --cor4:#8C0303;
+    
+        --fonte-square: 'square';
+        --fonte-ea: 'ea';
+    }
+    
+    *{
+        margin: 0px;
+        padding: 0px;
+        
+    }
+    
+    header{
+     background-image: linear-gradient(to bottom, var(--cor3), var(--cor4)
+     );
+     text-align: center;
+     padding: 100px;
+     margin: auto;
+     
+    }
+    
+    header > h1{
+        font-family: var(--fonte-square);
+        font-size: 40px;
+        margin-top: -80px ;
+    }
+    
+    header > h2{
+        font-family: var(--fonte-ea);
+        font-size: 1.5em;
+    
+    }
+    
+    .imag > img{
+        max-width: 100px;
+        display: block;
+        position: relative;
+        top: 10px;
+        left: 70px;
+        padding-bottom: 15px;
+        
+    
+    }
+
+    .imag2 > img{
+        max-width: 200px;
+        display: block;
+        position: relative;
+        left: 1200px;
+        bottom: 150px;
+        margin-bottom: -140px;
+        
+    }
+
+    html{
+        height: 100vh;
+        min-width: 40vh;
+    }
+    
+    
+    body{
+        background-color: gray;
+        max-width: 100%;
+        font-size: 16px;
+        overflow-x: hidden;
+    }
+    
+    body > p{
+        position: relative;
+        left: 80px;
+        top: 40px;
+        display: flex;
+        
+    }
+    
+    
+    main{
+        width: 100%;
+        background-color: white;
+        margin: auto;
+        box-shadow: 0px 0px 2px black;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    section{
+        padding-top: 10px;
+        padding-left: 80px;
+        width: 70%;
+    }
+    
+    section > h1{
+        text-align: center;
+        padding-bottom: 10px;
+        
+    }
+    
+    section > p{
+        text-align: center;
+        text-align: justify;
+        font-size: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
+    
+    nav.menu-lateral{
+        width: 50px;
+        height: 1257px;
+        background-color: var(--cor2);
+        padding: 40px 0px 40px 1%;
+        box-shadow: 3px 0px 0px var(--cor0);
+        overflow: hidden;
+        transition: .5s;
+        position: absolute;
+        left: 0;
+        z-index: 1;
+    }
+    
+    nav.menu-lateral.exp{
+        width: 300px;
+    }
+    
+    .expandir{
+        width: 100%;
+        padding-left: 10px;
+        text-align: left;
+        position: relative;
+        right: 100px;
+        top: 90px;
+    }
+    
+    .expandir > i{
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    
+    ul{
+        height: 100%;
+        list-style-type: none;
+    }
+    
+    ul li.item-menu{
+        transition: .2s;
+    }
+    
+    ul li.ativo{
+        background-color: var(--cor0);
+    }
+    
+    ul li.item-menu:hover{
+        background-color: var(--cor0);
+    
+    }
+    
+    ul li.item-menu a{
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        padding: 20px 4%;
+        display: flex;
+        margin-bottom: 20px;
+        line-height: 40px;
+    }
+    
+    ul li.item-menu a .txt-link{
+        margin-left: 70px;
+        transition: .5s;
+        opacity: 0;
+    }
+    
+    nav.menu-lateral.exp .txt-link{
+        margin-left: 40px;
+        opacity: 1;
+    
+    }
+    
+    ul li.item-menu a .icon > i{
+        font-size: 30px;
+    }
+    
+    footer {
+        background-color: #333; /* Cor de fundo do rodapé */
+        color: #fff; /* Cor do texto no rodapé */
+        padding: 20px; /* Espaçamento interno do rodapé */
+        text-align: center; /* Alinhamento do texto no centro */
+    }
+    
+    /* Estilos para os links no rodapé */
+    footer a {
+        color: #fff; /* Cor dos links no rodapé */
+        text-decoration: none; /* Remova a sublinhado dos links */
+        margin: 0 10px; /* Espaçamento entre os links no rodapé */
+    }
+}
+
 @media screen and (min-width:768px) and (max-width:992px) {
     @font-face {
         font-family: 'square';
