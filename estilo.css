@@ -41,19 +41,19 @@
     
     header > h1{
         font-family: var(--fonte-square);
-        font-size: 40px;
+        font-size: 30px;
         margin-top: -80px ;
     }
     
     header > h2{
         font-family: var(--fonte-ea);
-        font-size: 1.5em;
+        font-size: 10px;
     
     }
     
     .imag > img{
-        max-width: 100px;
-        display: none;
+        max-width: 70px;
+        display: block;
         position: relative;
         top: 10px;
         left: 70px;
@@ -127,7 +127,7 @@
     
     nav.menu-lateral{
         width: 50px;
-        height: 1257px;
+        height: 100%;
         background-color: var(--cor2);
         padding: 40px 0px 40px 1%;
         box-shadow: 3px 0px 0px var(--cor0);
