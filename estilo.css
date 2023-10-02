@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     @font-face {
         font-family: 'square';
         src: url(fontes/square.ttf);
@@ -34,14 +34,14 @@
      background-image: linear-gradient(to bottom, var(--cor3), var(--cor4)
      );
      text-align: center;
-     padding: 20px;
+     padding: 100px;
      margin: auto;
      
     }
     
     header > h1{
         font-family: var(--fonte-square);
-        font-size: 2.5em;
+        font-size: 40px;
         margin-top: -80px ;
     }
     
@@ -52,25 +52,23 @@
     }
     
     .imag > img{
-        max-width: 100%;
-        display: inline-block;
-        margin: 10px auto;
-        position: static;
+        max-width: 100px;
+        display: none;
+        position: relative;
         top: 10px;
         left: 70px;
         padding-bottom: 15px;
-        bottom: auto;
         
     
     }
 
     .imag2 > img{
-        max-width: 100%;
-        display: inline-block;
-        position: static;
+        max-width: 200px;
+        display: none;
+        position: relative;
         left: 1200px;
-        bottom: auto;
-        margin: 10px auto;
+        bottom: 150px;
+        margin-bottom: -140px;
         
     }
 
@@ -89,8 +87,8 @@
     
     body > p{
         position: relative;
-        left: 0px;
-        top: 0px;
+        left: 80px;
+        top: 40px;
         display: flex;
         
     }
@@ -128,10 +126,10 @@
     }
     
     nav.menu-lateral{
-        width: 100%;
+        width: 50px;
         height: 1257px;
         background-color: var(--cor2);
-        padding: 10px 0;
+        padding: 40px 0px 40px 1%;
         box-shadow: 3px 0px 0px var(--cor0);
         overflow: hidden;
         transition: .5s;
